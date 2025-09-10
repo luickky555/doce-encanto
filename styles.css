@@ -1,0 +1,30 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff5f8;
+}
+
+.bg-pink {
+  background: linear-gradient(90deg, #ff6a95, #ff8bbd);
+}
+
+.sweet-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.sweet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.sweet-img {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: opacity 0.3s ease;
+}
+
+.card-stagger {
+  opacity: 1; /* Agora aparece sempre */
+}
