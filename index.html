@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Doceria da Casa</title>
 
   <!-- Bootstrap -->
@@ -20,12 +20,12 @@
 <body>
   <!-- Header -->
   <header class="bg-pink text-white text-center py-4 shadow">
-    <h1 class="fw-bold">🍬 Doceria da Casa 🍫</h1>
+    <h1 class="fw-bold">🍬 Doceria Encanto 🍫</h1>
     <p>
-      <i class="bi bi-telephone"></i> 
-      <a href="tel:+55999999999" class="text-white"> (99) 99999-9999</a> | 
-      <i class="bi bi-instagram"></i> 
-      <a href="https://instagram.com/sua.doceria" target="_blank" class="text-white">@sua.doceria</a>
+      <i class="bi bi-telephone"></i>
+      <a href="tel:+5586981620525" class="text-white"> (86) 98162-0525</a> |
+      <i class="bi bi-instagram"></i>
+      <a href="https://www.instagram.com/_doceencantoow?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white">@_doceencantoow</a>
     </p>
   </header>
 
@@ -38,14 +38,14 @@
       <!-- Copo Doce -->
       <div class="col-md-4 card-stagger">
         <div class="card h-100 shadow sweet-card">
-          <img src="/imagens.jpg/copo de doce.jpg" class="card-img-top sweet-img" alt="Copo Doce">
+          <img src="/doce-encanto-main/imagens.jpg/copo de doce.jpg" class="card-img-top sweet-img" alt="Copo Doce">
           <div class="card-body text-center">
             <h5 class="card-title">Copo Doce</h5>
             <p class="card-text">Cremoso e cheio de camadas de sabor.</p>
             <select class="form-select mb-2 flavor-select" data-product="copo">
               <option value="brigadeiro" data-img="img/copo-brigadeiro.jpg">Brigadeiro</option>
-              <option value="beijinho" data-img="img/copo-beijinho.jpg">Beijinho</option>
-              <option value="napolitano" data-img="img/copo-napolitano.jpg">Napolitano</option>
+              <option value="beijinho" data-img="img/copo-beijinho.jpg">Ninho</option>
+              
             </select>
             <div class="d-flex align-items-center justify-content-center">
               <button class="btn btn-outline-danger me-2 minus-btn" data-product="copo">-</button>
@@ -59,14 +59,17 @@
       <!-- Cone Trufado -->
       <div class="col-md-4 card-stagger">
         <div class="card h-100 shadow sweet-card">
-          <img src="/imagens.jpg/cone com morango.jpg" class="card-img-top sweet-img" alt="Cone Trufado">
+          <img src="/doce-encanto-main/imagens.jpg/cone com morango.jpg" class="card-img-top sweet-img" alt="Cone Trufado">
           <div class="card-body text-center">
             <h5 class="card-title">Cone Trufado</h5>
             <p class="card-text">Casquinha crocante recheada com trufa artesanal.</p>
             <select class="form-select mb-2 flavor-select" data-product="cone">
-              <option value="chocolate" data-img="img/cone-chocolate.jpg">Chocolate</option>
-              <option value="nutella" data-img="img/cone-nutella.jpg">Nutella</option>
-              <option value="prestigio" data-img="img/cone-prestigio.jpg">Prestígio</option>
+              <option value="chocolate" data-img="img/cone-chocolate.jpg">Chocolate Branco</option>
+              <option value="nutella" data-img="img/cone-nutella.jpg">Chocolate Branco Morango e Nutella</option>
+              <option value="prestigio" data-img="img/cone-prestigio.jpg">Maracujá NInho e Nutella</option>
+              <option value="prestigio" data-img="img/cone-prestigio.jpg">Brigadeiro</option>
+              <option value="prestigio" data-img="img/cone-prestigio.jpg">Ninho</option>
+
             </select>
             <div class="d-flex align-items-center justify-content-center">
               <button class="btn btn-outline-danger me-2 minus-btn" data-product="cone">-</button>
@@ -80,14 +83,14 @@
       <!-- Morango do Amor -->
       <div class="col-md-4 card-stagger">
         <div class="card h-100 shadow sweet-card">
-          <img src="/imagens.jpg/morango.jpg" class="card-img-top sweet-img" alt="Morango do Amor">
+          <img src="/doce-encanto-main/imagens.jpg/morango.jpg" class="card-img-top sweet-img" alt="Morango do Amor">
           <div class="card-body text-center">
             <h5 class="card-title">Morango do Amor</h5>
             <p class="card-text">Morango inteiro banhado e irresistível.</p>
             <select class="form-select mb-2 flavor-select" data-product="morango">
               <option value="tradicional" data-img="img/morango-tradicional.jpg">Tradicional</option>
-              <option value="branco" data-img="img/morango-branco.jpg">Chocolate Branco</option>
-              <option value="mix" data-img="img/morango-mix.jpg">Mix</option>
+              
+              
             </select>
             <div class="d-flex align-items-center justify-content-center">
               <button class="btn btn-outline-danger me-2 minus-btn" data-product="morango">-</button>
@@ -118,15 +121,29 @@
         </div>
       </div>
       <div id="pix-info" class="text-center mt-3">
-        <p><strong>Chave PIX:</strong> doceria@pix.com</p>
-        <button class="btn btn-warning" onclick="copiarPix()">Copiar chave</button>
+        <p><strong>Chave PIX:</strong> (86) 98162-0525</p>
+        <button class="btn btn-warning" type="button" onclick="copiarPix()">Copiar chave</button>
       </div>
     </section>
+
+    <!-- Botão Finalizar Pedido -->
+    <div class="text-center mt-4">
+      <button id="finalizarBtn" class="btn btn-success btn-lg" type="button">Finalizar Pedido</button>
+    </div>
   </main>
+
+  <!-- Tela de Agradecimento -->
+  <div id="agradecimento" class="text-center my-5" style="display:none;">
+    <h2 class="text-success">🎉 Obrigado pela sua compra! 🎉</h2>
+    <p>Seu pedido foi registrado com sucesso.</p>
+    <div id="order-summary" style="margin-top:18px;"></div>
+    <p style="margin-top:12px;">Recomendamos também nossos <strong>cones trufados</strong> e <strong>morango do amor</strong> 🍓🍫</p>
+    <button id="btnVoltar" class="btn btn-primary mt-4">⬅️ Voltar ao início</button>
+  </div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Script personalizado -->
-  <script src="script.js"></script>
+  <script src="scrpt.js"></script>
 </body>
 </html>

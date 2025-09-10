@@ -4,7 +4,7 @@ body {
 }
 
 .bg-pink {
-  background: linear-gradient(90deg, #ff6a95, #ff8bbd);
+  background: linear-gradient(90deg, #4f005f, #85003ab9);
 }
 
 .sweet-card {
@@ -26,5 +26,44 @@ body {
 }
 
 .card-stagger {
-  opacity: 1; /* Agora aparece sempre */
+  opacity: 1;
+}
+
+/* Tela de agradecimento */
+#agradecimento {
+  background: #e8ffe8;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  animation: fadeIn 1s ease;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+#agradecimento h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#agradecimento p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Botão Voltar */
+#btnVoltar {
+  font-size: 1.1rem;
+  padding: 10px 25px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+#btnVoltar:hover {
+  background-color: #004085;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
